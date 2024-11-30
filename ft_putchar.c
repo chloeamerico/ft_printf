@@ -1,31 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   print_str.c                                        :+:      :+:    :+:   */
+/*   print_char.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: camerico <camerico@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/11/29 15:38:12 by camerico          #+#    #+#             */
-/*   Updated: 2024/11/29 16:53:36 by camerico         ###   ########.fr       */
+/*   Created: 2024/11/29 15:45:25 by camerico          #+#    #+#             */
+/*   Updated: 2024/11/30 19:58:27 by camerico         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int	print_str(char *str)
+// fonction pour print un charactere unique (%c)
+int	ft_putchar(char c)
 {
-	int	i;
-
-	i = 0;
-	if (!str)
-	{
-		ft_putstr_fd("(null)", 1);
-		return (6);
-	}
-	while (str[i])
-	{
-		write(1, &str[i], 1);
-		i++;
-	}
-	return(i);
+	write(1, &c, 1);
+	return (1);
 }

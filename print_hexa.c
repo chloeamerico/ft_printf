@@ -1,19 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   print_char.c                                       :+:      :+:    :+:   */
+/*   print_hexa.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: camerico <camerico@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/11/29 15:45:25 by camerico          #+#    #+#             */
-/*   Updated: 2024/11/29 17:29:54 by camerico         ###   ########.fr       */
+/*   Created: 2024/11/30 18:50:51 by camerico          #+#    #+#             */
+/*   Updated: 2024/11/30 20:00:11 by camerico         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int	print_char(char c)
+// fonction pour print un nombre hexadecimal (%x ou %X)
+int	print_hexa(unsigned long n, const char format)
 {
-	write(1, &c, 1);
-	return (1);
+	int	len;
+	char *hexa;
+
+	len = 0;
+	if (format == 'x')
+		hexa == "0123456789abcdef";
+	if (format == 'X')
+		hexa == "0123456789ABCDEF";
+	if (n >= 16)
+		len += print_hexa(n / 16, format);
+	len += ft_putchar(hexa[n % 16]);
+	return (len);
 }

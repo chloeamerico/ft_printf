@@ -1,41 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   print_unsigned.c                                   :+:      :+:    :+:   */
+/*   print_str.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: camerico <camerico@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/11/29 15:56:22 by camerico          #+#    #+#             */
-/*   Updated: 2024/11/30 19:17:51 by camerico         ###   ########.fr       */
+/*   Created: 2024/11/29 15:38:12 by camerico          #+#    #+#             */
+/*   Updated: 2024/11/30 19:57:50 by camerico         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-// int	print_char(char c)
-// {
-// 	write(1, &c, 1);
-// 	return (1);
-// }
-
-// fonction pour print un unsigned int base 10 (%u) 
-int	print_unsigned(unsigned int n)
+// fonction pour imprimer une string (%s)
+int	ft_putstr(char *str)
 {
 	int	i;
-	char	c;
 
 	i = 0;
-	if (n >= 10)
-		i += print_unsigned(n / 10);
-	c = (n % 10) + 48;
-	i += print_char(c);
-	return (i);
+	if (!str)
+	{
+		ft_putstr_fd("(null)", 1);
+		return (6);
+	}
+	while (str[i])
+	{
+		write(1, &str[i], 1);
+		i++;
+	}
+	return(i);
 }
-
-// int	main(void)
-// {
-// 	unsigned int	n = 12345;
-
-// 	printf("%u", print_unsigned(n));
-// 	return (0);
-// }
