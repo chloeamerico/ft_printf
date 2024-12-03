@@ -6,7 +6,7 @@
 /*   By: camerico <camerico@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/29 17:41:58 by camerico          #+#    #+#             */
-/*   Updated: 2024/12/02 17:47:45 by camerico         ###   ########.fr       */
+/*   Updated: 2024/12/03 13:06:42 by camerico         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,7 @@ int	print_integer(int n)
 	if (!str)
 		return (0);
 	len = ft_strlen(str);
-	ft_putstr_fd(str, 1);
+	ft_putstr(str);
 	free(str);
 	return (len);
 }
