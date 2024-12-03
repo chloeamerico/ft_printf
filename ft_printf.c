@@ -6,11 +6,17 @@
 /*   By: camerico <camerico@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/29 13:33:36 by camerico          #+#    #+#             */
-/*   Updated: 2024/12/02 19:05:56 by camerico         ###   ########.fr       */
+/*   Updated: 2024/12/03 15:59:24 by camerico         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
+
+int	print_char(char c)
+{
+	write(1, &c, 1);
+	return (1);
+}
 
 int	ft_formats(va_list args, const char format)
 {

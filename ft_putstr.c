@@ -6,7 +6,7 @@
 /*   By: camerico <camerico@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/29 15:38:12 by camerico          #+#    #+#             */
-/*   Updated: 2024/12/02 19:05:37 by camerico         ###   ########.fr       */
+/*   Updated: 2024/12/03 15:28:57 by camerico         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,6 @@ int	ft_putstr(char *str)
 	if (!str)
 	{
 		str = "(null)";
-		return (6);
 	}
 	while (str[i])
 	{

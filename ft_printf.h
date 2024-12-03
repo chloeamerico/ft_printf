@@ -6,7 +6,7 @@
 /*   By: camerico <camerico@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/29 15:17:52 by camerico          #+#    #+#             */
-/*   Updated: 2024/12/03 13:17:18 by camerico         ###   ########.fr       */
+/*   Updated: 2024/12/03 13:58:00 by camerico         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,12 +17,12 @@
 /* INCLUDES                                                                   */
 /* ************************************************************************** */
 
+# include <stdarg.h>
 # include <stdio.h>
 # include <stdlib.h>
 # include <string.h>
 # include <strings.h>
 # include <unistd.h>
-# include <stdarg.h>
 
 /* ************************************************************************** */
 /* DEFINES                                                                    */
@@ -36,14 +36,15 @@
 /* PROTO                                                                      */
 /* ************************************************************************** */
 
-int	ft_putchar(char c);
-int	ft_putstr(char *str);
-int	print_hexa(unsigned long n, const char format);
-int	print_integer(int n);
-int	print_pointeur(void *ptr);
-int	print_unsigned(unsigned int n);
-char *ft_itoa(int nb);
-size_t ft_strlen(const char *s);
+int		ft_putchar(char c);
+int		ft_putstr(char *str);
+int		print_hexa(unsigned long n, const char format);
+int		print_integer(int n);
+int		print_pointeur(void *ptr);
+int		print_unsigned(unsigned int n);
+int		ft_printf(const char *str, ...);
+char	*ft_itoa(int nb);
+size_t	ft_strlen(const char *s);
 
 /* ************************************************************************** */
 /* DEBUG                                                                      */
