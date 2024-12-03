@@ -1,6 +1,7 @@
 NAME = libftprintf.a
 
-SRCS = 
+SRCS = ft_printf.c \ ft_putchar.c \ ft_putstr.c \ print_hexa.c \
+	print_integer.c \ print_pointeur.c \ print_unsigned.c \
 
 OBJS = $(SRCS:.c=.o)
 
@@ -12,18 +13,15 @@ all: $(NAME)
 $(NAME): $(OBJS)
 	ar rc $(NAME) $(OBJS)
 
-bonus: $(OBJS) $(OBJSBONUS)
-	ar rcs $(NAME) $(OBJS) $(OBJSBONUS)
-
 %.o: %.c
 	$(CC) $(CFLAGS) -I. -c $< -o $@
 
 clean:
-	rm -f $(OBJS) $(OBJSBONUS)
+	rm -f $(OBJS)
 
 fclean: clean
 	rm -f $(NAME)
 
 re: fclean all
 
-.PHONY: all clean fclean re bonus
+.PHONY: all clean fclean re

@@ -6,7 +6,7 @@
 /*   By: camerico <camerico@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/29 15:17:52 by camerico          #+#    #+#             */
-/*   Updated: 2024/12/02 15:40:57 by camerico         ###   ########.fr       */
+/*   Updated: 2024/12/02 19:09:58 by camerico         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@
 # include <string.h>
 # include <strings.h>
 # include <unistd.h>
-// # include <../libft/libft.h>
+# include <stdarg.h>
 
 /* ************************************************************************** */
 /* DEFINES                                                                    */
@@ -32,12 +32,16 @@
 /* STRUCTURES                                                                 */
 /* ************************************************************************** */
 
-
 /* ************************************************************************** */
 /* PROTO                                                                      */
 /* ************************************************************************** */
 
-
+int	ft_putchar(char c);
+int	ft_putstr(char *str);
+int	print_hexa(unsigned long n, const char format);
+int	print_integer(int n);
+int	print_pointeur(void *ptr);
+int	print_unsigned(unsigned int n);
 
 /* ************************************************************************** */
 /* DEBUG                                                                      */

@@ -6,7 +6,7 @@
 /*   By: camerico <camerico@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/29 15:56:22 by camerico          #+#    #+#             */
-/*   Updated: 2024/11/30 19:17:51 by camerico         ###   ########.fr       */
+/*   Updated: 2024/12/02 17:47:41 by camerico         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,10 +18,10 @@
 // 	return (1);
 // }
 
-// fonction pour print un unsigned int base 10 (%u) 
+// fonction pour print un unsigned int base 10 (%u)
 int	print_unsigned(unsigned int n)
 {
-	int	i;
+	int		i;
 	char	c;
 
 	i = 0;

@@ -6,7 +6,7 @@
 /*   By: camerico <camerico@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/30 18:50:51 by camerico          #+#    #+#             */
-/*   Updated: 2024/11/30 20:00:11 by camerico         ###   ########.fr       */
+/*   Updated: 2024/12/02 19:10:51 by camerico         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,14 +15,14 @@
 // fonction pour print un nombre hexadecimal (%x ou %X)
 int	print_hexa(unsigned long n, const char format)
 {
-	int	len;
-	char *hexa;
+	int		len;
+	char	*hexa;
 
 	len = 0;
 	if (format == 'x')
-		hexa == "0123456789abcdef";
+		hexa = "0123456789abcdef";
 	if (format == 'X')
-		hexa == "0123456789ABCDEF";
+		hexa = "0123456789ABCDEF";
 	if (n >= 16)
 		len += print_hexa(n / 16, format);
 	len += ft_putchar(hexa[n % 16]);
