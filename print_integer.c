@@ -6,7 +6,7 @@
 /*   By: camerico <camerico@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/29 17:41:58 by camerico          #+#    #+#             */
-/*   Updated: 2024/12/03 13:06:42 by camerico         ###   ########.fr       */
+/*   Updated: 2024/12/09 11:02:07 by camerico         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,7 @@
 // 		i++;
 // 	return (i);
 // }
+// ou faire un putnbr
 
 // fonction pour print un int en base 10 (%i ou %d)
 int	print_integer(int n)

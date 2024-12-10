@@ -57,5 +57,11 @@ int main(void)
     x = printf("Pointer test: %p\n", (void *)0);
 	printf("return value :%d\n", x);
 
+    printf("%d\n", printf(0));
+    ft_printf("%d\n", ft_printf(0));
+
+    printf("%s\n", "");
+    ft_printf("%s\n", "");
+
     return 0;
 }

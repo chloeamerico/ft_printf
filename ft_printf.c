@@ -6,7 +6,7 @@
 /*   By: camerico <camerico@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/29 13:33:36 by camerico          #+#    #+#             */
-/*   Updated: 2024/12/03 15:59:24 by camerico         ###   ########.fr       */
+/*   Updated: 2024/12/09 10:59:19 by camerico         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,6 +49,8 @@ int	ft_printf(const char *str, ...)
 	i = 0;
 	print_length = 0;
 	va_start(args, str);
+	if (!str)
+		return (-1);
 	while (str[i])
 	{
 		if (str[i] == '%')
